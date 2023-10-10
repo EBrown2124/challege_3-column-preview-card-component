@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100&family=Lexend+Deca:wght@100;200;300;400;500;600&family=Oswald:wght@200;300;400;500;600&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;200;300;400;500;600;700&family=Lexend+Deca:wght@100;200;300;400;500;600&family=Oswald:wght@200;300;400;500;600&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | 3-column preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    section{
+      display: flex;
+      justify-content: center;
+      margin: 200px 0 0 0;
+    }
+
+    .container{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    .card {
+    width: 250px;
+    padding: 45px;
+    color: white;
+    }
+
+    .card h1 {
+      font-family: 'Big Shoulders Display', sans-serif;
+      font-weight: 600;
+      font-size: 45px;
+    }
+
+    .card p{
+      color: hsla(0, 0%, 100%, 0.75);
+      font-family: 'Lexend Deca', sans-serif;
+      font-weight: 200;
+      padding: 0 42px 65px 0;
+      line-height: 1.5;
+    }
+
+    .card button{
+      font-family: 'Lexend Deca', sans-serif;
+      padding: 15px 30px 15px 30px;
+      border-radius: 50px;
+      border: none;
+    }
+
+    .sedans {
+      background-color: hsl(31, 77%, 52%);
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+    }
+
+    .sedans button{
+      color: hsl(31, 77%, 52%);
+    }
+
+
+    .suvs{
+      background-color:hsl(184, 100%, 22%);
+    }
+
+    .suvs button{
+      color:hsl(184, 100%, 22%);
+    }
+
+    .lux{
+      background-color: hsl(179, 100%, 13%);
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+
+    .lux button{
+      color: hsl(179, 100%, 13%);
+    }
+
+    @media screen and (max-width:1030px){
+      section{
+        margin: 0;
+      }
+      .container{
+        flex-direction: column;
+      }
+      .sedans {
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      border-bottom-left-radius: 0;
+    }
+    
+    .lux{
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      border-top-right-radius: 0;
+    }
+    }
+
+  </style>
+
+</head>
+<body>
+  <section>
+    <div class="container">
+
+      <div class="sedans card">
+        <img src="./images/icon-sedans.svg" alt="">
+        <h1>SEDANS</h1>
+        <p>Choose a sedan for its affordability and excellent fuel 
+          economy. Ideal for crusing in the city or on your next road trip</p>
+        <button>Learn More</button>
+      </div>
+      
+      <div class="suvs card">
+        <img src="./images/icon-suvs.svg" alt="">
+        <h1>SUVS</h1>
+        <p>Take an SUV for its spacious intertior, power, and versatility.
+          perfect for your next family vacation and off-road adventures.</p>
+        <button>Learn More</button>
+      </div>
+
+      <div class="lux card">
+        <img src="./images/icon-luxury.svg" alt="">
+        <h1>LUXURY</h1>
+        <p>Cruise in the best car brands without the bloated prices.
+          Enjoy the enhanced comfort of a luxury rental and arrive in style.</p>
+        <button>Learn More</button>
+      </div>
+      
+      <!-- <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">EBrown2124</a>.
+      </div> -->
+    </div>
+  </section>
+  
+  
+</body>
+</html>
